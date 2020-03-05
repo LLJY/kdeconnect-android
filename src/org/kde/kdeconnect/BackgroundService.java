@@ -60,7 +60,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import androidx.core.app.NotificationCompat;
 
 
-//import org.kde.kdeconnect.Backends.BluetoothBackend.BluetoothLinkProvider;
+import org.kde.kdeconnect.Backends.BluetoothBackend.BluetoothLinkProvider;
 
 public class BackgroundService extends Service {
     private static final int FOREGROUND_NOTIFICATION_ID = 1;
@@ -162,7 +162,7 @@ public class BackgroundService extends Service {
     private void registerLinkProviders() {
         linkProviders.add(new LanLinkProvider(this));
 //        linkProviders.add(new LoopbackLinkProvider(this));
-//        linkProviders.add(new BluetoothLinkProvider(this));
+        linkProviders.add(new BluetoothLinkProvider(this));
     }
 
     public ArrayList<BaseLinkProvider> getLinkProviders() {
