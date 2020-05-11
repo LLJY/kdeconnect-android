@@ -3,6 +3,7 @@
   <string name="kde_connect">KDE Connect</string>
   <string name="foreground_notification_no_devices">Ikkje tilkopla ei eining</string>
   <string name="foreground_notification_devices">Kopla til: %s</string>
+  <string name="foreground_notification_send_clipboard">Send utklippstavle</string>
   <string name="pref_plugin_telephony">Telefonvarsling</string>
   <string name="pref_plugin_telephony_desc">Send varsling ved oppringing</string>
   <string name="pref_plugin_battery">Batterirapport</string>
@@ -11,6 +12,7 @@
   <string name="pref_plugin_sftp_desc">Tillat lesing av filsystemet frå datamaskina</string>
   <string name="pref_plugin_clipboard">Synkroniser utklippstavle</string>
   <string name="pref_plugin_clipboard_desc">Del innhaldet på utklippstavla</string>
+  <string name="pref_plugin_clipboard_sent">Utklippstavle send</string>
   <string name="pref_plugin_mousepad">Fjernstyring</string>
   <string name="pref_plugin_mousepad_desc">Bruk telefonen eller nettbrettet som styreplate og tastatur</string>
   <string name="pref_plugin_presenter">Fjernstyring av lysbiletvising</string>
@@ -123,6 +125,7 @@
     <item quantity="one">Klarte ikkje senda fil til %1$s</item>
     <item quantity="other">Klarte ikkje senda %2$d av %3$d filer til %1$s</item>
   </plurals>
+  <string name="tap_to_open">Trykk for å opna</string>
   <string name="received_file_text">Trykk for å opna «%1s»</string>
   <string name="cannot_create_file">Klarte ikkje oppretta fila %s</string>
   <string name="tap_to_answer">Trykk for å svara</string>
@@ -287,4 +290,14 @@
   <string name="location_permission_needed_title">Krev utvida løyve</string>
   <string name="location_permission_needed_desc">Tilgang til geografisk plassering må vera påslått for identifisering av Wi-Fi-nettverket</string>
   <string name="clipboard_android_x_incompat">Android 10 har fjerna tilgang til utklippstavla for alle program. Programtillegget vert derfor slått av.</string>
+  <string name="mpris_open_url">Hald fram avspeling her</string>
+  <string name="cant_open_url">Kan ikkje opna adressa for framhald av avspeling</string>
+  <string name="bigscreen_home">Heim</string>
+  <string name="bigscreen_up">Opp</string>
+  <string name="bigscreen_left">Venstre</string>
+  <string name="bigscreen_select">Vel</string>
+  <string name="bigscreen_right">Høgre</string>
+  <string name="bigscreen_down">Ned</string>
+  <string name="pref_plugin_bigscreen">Bigscreen-fjernkontroll</string>
+  <string name="pref_plugin_bigscreen_desc">Bruk eininga som fjernkontroll for Plasma Bigscreen</string>
 </resources>

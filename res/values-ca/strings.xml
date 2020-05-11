@@ -3,6 +3,7 @@
   <string name="kde_connect">KDE Connect</string>
   <string name="foreground_notification_no_devices">No està connectat a cap dispositiu</string>
   <string name="foreground_notification_devices">Connectat a: %s</string>
+  <string name="foreground_notification_send_clipboard">Envia al porta-retalls</string>
   <string name="pref_plugin_telephony">Notificador de la telefonia</string>
   <string name="pref_plugin_telephony_desc">Envia notificacions per a les trucades entrants</string>
   <string name="pref_plugin_battery">Informa de la bateria</string>
@@ -11,6 +12,7 @@
   <string name="pref_plugin_sftp_desc">Permet navegar de forma remota pel sistema de fitxers del dispositiu</string>
   <string name="pref_plugin_clipboard">Sincronitza el porta-retalls</string>
   <string name="pref_plugin_clipboard_desc">Comparteix el contingut del porta-retalls</string>
+  <string name="pref_plugin_clipboard_sent">S\'ha enviat al porta-retalls</string>
   <string name="pref_plugin_mousepad">Entrada remota</string>
   <string name="pref_plugin_mousepad_desc">Usa el vostre telèfon o tauleta com un ratolí i un teclat</string>
   <string name="pref_plugin_presenter">Presentació de diapositives remota</string>
@@ -30,7 +32,7 @@
   <string name="pref_plugin_receive_notifications">Rep les notificacions</string>
   <string name="pref_plugin_receive_notifications_desc">Rep notificacions des d\'altres dispositius i mostrar-los a l\'Android</string>
   <string name="pref_plugin_sharereceiver">Comparteix i rep</string>
-  <string name="pref_plugin_sharereceiver_desc">Comparteix els fitxers i els URL entre els dispositius</string>
+  <string name="pref_plugin_sharereceiver_desc">Comparteix els fitxers i URL entre els dispositius</string>
   <string name="device_list_empty">No hi ha cap dispositiu</string>
   <string name="ok">D\'acord</string>
   <string name="sad_ok">D\'acord :(</string>
@@ -123,7 +125,8 @@
     <item quantity="one">Ha fallat en enviar el fitxer a %1$s</item>
     <item quantity="other">Ha fallat en enviar %2$d de %3$d fitxers a %1$s</item>
   </plurals>
-  <string name="received_file_text">Puntegeu per obrir «%1s»</string>
+  <string name="tap_to_open">Toqueu per obrir</string>
+  <string name="received_file_text">Toqueu per obrir «%1s»</string>
   <string name="cannot_create_file">No s\'ha pogut crear el fitxer %s</string>
   <string name="tap_to_answer">Puntegeu per a respondre</string>
   <string name="right_click">Envia un clic del botó dret</string>
@@ -198,7 +201,7 @@
   <string name="sftp_no_storage_locations_configured">No s\'ha configurat cap ubicació d\'emmagatzematge</string>
   <string name="sftp_saf_permission_explanation">Per accedir remotament als fitxer cal configurar les ubicacions d\'emmagatzematge</string>
   <string name="no_players_connected">No s\'ha trobat cap reproductor</string>
-  <string name="send_files">Envia els fitxers</string>
+  <string name="send_files">Envia fitxers</string>
   <string name="pairing_title">Dispositius del KDE Connect</string>
   <string name="pairing_description">Els altres dispositius que executin el KDE Connect a la mateixa xarxa han d\'aparèixer aquí.</string>
   <string name="device_rename_title">Reanomena el dispositiu</string>
@@ -287,4 +290,14 @@
   <string name="location_permission_needed_title">Es requereix permís</string>
   <string name="location_permission_needed_desc">L\'Android requereix el permís d\'ubicació per identificar la xarxa WiFi</string>
   <string name="clipboard_android_x_incompat">L\'Android 10 ha tret l\'accés al porta-retalls a totes les aplicacions. Aquest connector estarà inhabilitat.</string>
+  <string name="mpris_open_url">Continua reproduint aquí</string>
+  <string name="cant_open_url">No s\'ha pogut obrir l\'URL per a continuar reproduint</string>
+  <string name="bigscreen_home">Inici</string>
+  <string name="bigscreen_up">Dalt</string>
+  <string name="bigscreen_left">Esquerra</string>
+  <string name="bigscreen_select">Selecció</string>
+  <string name="bigscreen_right">Dreta</string>
+  <string name="bigscreen_down">Baix</string>
+  <string name="pref_plugin_bigscreen">Pantalla gran remota</string>
+  <string name="pref_plugin_bigscreen_desc">Useu el dispositiu com a remot per a la Pantalla gran del Plasma</string>
 </resources>

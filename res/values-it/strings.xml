@@ -3,6 +3,7 @@
   <string name="kde_connect">KDE Connect</string>
   <string name="foreground_notification_no_devices">Non connesso ad alcun dispositivo</string>
   <string name="foreground_notification_devices">Connesso a: %s</string>
+  <string name="foreground_notification_send_clipboard">Invia appunti</string>
   <string name="pref_plugin_telephony">Notifiche telefoniche</string>
   <string name="pref_plugin_telephony_desc">Invia notifiche per le chiamate in ingresso</string>
   <string name="pref_plugin_battery">Livello batteria</string>
@@ -11,6 +12,7 @@
   <string name="pref_plugin_sftp_desc">Consente di navigare da remoto il filesystem del dispositivo</string>
   <string name="pref_plugin_clipboard">Sincronizzazione appunti</string>
   <string name="pref_plugin_clipboard_desc">Condividi il contenuto degli appunti</string>
+  <string name="pref_plugin_clipboard_sent">Appunti inviati</string>
   <string name="pref_plugin_mousepad">Impulso remoto</string>
   <string name="pref_plugin_mousepad_desc">Usa il tuo telefono o il tablet come touchpad e tastiera</string>
   <string name="pref_plugin_presenter">Telecomando della presentazione</string>
@@ -123,6 +125,7 @@
     <item quantity="one">Invio del file a %1$s non riuscito</item>
     <item quantity="other">Invio di %2$d di %3$d file a %1$s non riuscito</item>
   </plurals>
+  <string name="tap_to_open">Tocca per aprire</string>
   <string name="received_file_text">Tocca per aprire «%1s»</string>
   <string name="cannot_create_file">Impossibile creare il file %s</string>
   <string name="tap_to_answer">Tocca per rispondere</string>
@@ -287,4 +290,14 @@
   <string name="location_permission_needed_title">Permesso richiesto</string>
   <string name="location_permission_needed_desc">Android richiede il permesso Posizione per identificare la tua rete WiFi</string>
   <string name="clipboard_android_x_incompat">Android 10 ha rimosso l\'accesso agli appunti a tutte le applicazioni. Questa estensione sarà disabilitata.</string>
+  <string name="mpris_open_url">Continua qui la riproduzione</string>
+  <string name="cant_open_url">Impossibile aprire l\'URL per continuare la riproduzione</string>
+  <string name="bigscreen_home">Inizio</string>
+  <string name="bigscreen_up">Su</string>
+  <string name="bigscreen_left">Sinistra</string>
+  <string name="bigscreen_select">Seleziona</string>
+  <string name="bigscreen_right">A destra</string>
+  <string name="bigscreen_down">Giù</string>
+  <string name="pref_plugin_bigscreen">Telecomando Bigscreen</string>
+  <string name="pref_plugin_bigscreen_desc">Utilizza il tuo dispositivo come telecomando per Plasma Bigscreen</string>
 </resources>

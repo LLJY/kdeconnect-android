@@ -3,6 +3,7 @@
   <string name="kde_connect">KDE Connect</string>
   <string name="foreground_notification_no_devices">Не з\'єднано із жодним пристроєм</string>
   <string name="foreground_notification_devices">З\'єднано з %s</string>
+  <string name="foreground_notification_send_clipboard">Надіслати вміст буфера</string>
   <string name="pref_plugin_telephony">Телефонний сповіщувач</string>
   <string name="pref_plugin_telephony_desc">Надсилати сповіщення щодо вхідних дзвінків</string>
   <string name="pref_plugin_battery">Звіт щодо заряду</string>
@@ -11,6 +12,7 @@
   <string name="pref_plugin_sftp_desc">Надає змогу віддалено переглядати файлову систему цього пристрою</string>
   <string name="pref_plugin_clipboard">Синхронізація буфера</string>
   <string name="pref_plugin_clipboard_desc">Спільне використання буфера обміну даними</string>
+  <string name="pref_plugin_clipboard_sent">Вміст буфера надіслано</string>
   <string name="pref_plugin_mousepad">Дистанційне введення</string>
   <string name="pref_plugin_mousepad_desc">Скористайтеся телефоном або планшетом як замінником сенсорної панелі і клавіатури</string>
   <string name="pref_plugin_presenter">Віддалений показ слайдів</string>
@@ -139,6 +141,7 @@
     <item quantity="many">Не вдалося надіслати %2$d з %3$d файлів до %1$s</item>
     <item quantity="other">Не вдалося надіслати файл до %1$s</item>
   </plurals>
+  <string name="tap_to_open">Натисніть, щоб відкрити</string>
   <string name="received_file_text">Натисніть, щоб відкрити «%1s»</string>
   <string name="cannot_create_file">Не вдалося створити файл %s</string>
   <string name="tap_to_answer">Натисніть, щоб відповісти</string>
@@ -303,4 +306,14 @@
   <string name="location_permission_needed_title">Потрібні права доступу</string>
   <string name="location_permission_needed_desc">Android потрібні права доступу до даних місця перебування для ідентифікації вашої мережі WiFi</string>
   <string name="clipboard_android_x_incompat">У Android 10 вилучено доступ до буфера даних для усіх програм. Цей додаток буде вимкнено.</string>
+  <string name="mpris_open_url">Продовжити відтворення тут</string>
+  <string name="cant_open_url">Не вдалося відкрити адресу для продовження відтворення</string>
+  <string name="bigscreen_home">Домівка</string>
+  <string name="bigscreen_up">Вгору</string>
+  <string name="bigscreen_left">Ліворуч</string>
+  <string name="bigscreen_select">Вибрати</string>
+  <string name="bigscreen_right">Праворуч</string>
+  <string name="bigscreen_down">Вниз</string>
+  <string name="pref_plugin_bigscreen">Керування великим екраном</string>
+  <string name="pref_plugin_bigscreen_desc">Скористайтеся вашим пристроєм як дистанційним керуванням для великого екрана Плазми</string>
 </resources>

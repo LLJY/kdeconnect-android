@@ -3,6 +3,7 @@
   <string name="kde_connect">KDE 連線</string>
   <string name="foreground_notification_no_devices">沒有連線到任何裝置</string>
   <string name="foreground_notification_devices">已連線到：%s</string>
+  <string name="foreground_notification_send_clipboard">傳送剪貼簿</string>
   <string name="pref_plugin_telephony">電話通知器</string>
   <string name="pref_plugin_telephony_desc">傳送未接來電的通知</string>
   <string name="pref_plugin_battery">電池報告</string>
@@ -11,6 +12,7 @@
   <string name="pref_plugin_sftp_desc">同意讓遠端可以瀏覽檔案系統</string>
   <string name="pref_plugin_clipboard">同步剪貼簿</string>
   <string name="pref_plugin_clipboard_desc">分享剪貼簿的內容</string>
+  <string name="pref_plugin_clipboard_sent">已傳送剪貼簿</string>
   <string name="pref_plugin_mousepad">遠端輸入</string>
   <string name="pref_plugin_mousepad_desc">使用您的智慧型手機或者平板來模擬觸碰板與鍵盤</string>
   <string name="pref_plugin_presenter">遠端投影片</string>
@@ -115,6 +117,7 @@
   <plurals name="send_files_fail_title">
     <item quantity="other">無法將第 %2$d (共 %3$d) 個檔案傳送至 %1$s</item>
   </plurals>
+  <string name="tap_to_open">按一下開啟</string>
   <string name="received_file_text">按一下開啟 \'%1s\'</string>
   <string name="cannot_create_file">無法建立 %s 檔案</string>
   <string name="tap_to_answer">按一下即可回應</string>
@@ -279,4 +282,14 @@
   <string name="location_permission_needed_title">需要權限</string>
   <string name="location_permission_needed_desc">Android 需要「位置」權限才能識別你的 Wi-Fi 網路</string>
   <string name="clipboard_android_x_incompat">Android 10 已移除所有應用程式的剪貼簿存取權限。此外掛程式將停用。</string>
+  <string name="mpris_open_url">繼續在此播放</string>
+  <string name="cant_open_url">無法開啟 URL 以繼續播放</string>
+  <string name="bigscreen_home">首頁</string>
+  <string name="bigscreen_up">上</string>
+  <string name="bigscreen_left">左</string>
+  <string name="bigscreen_select">選擇</string>
+  <string name="bigscreen_right">右</string>
+  <string name="bigscreen_down">下</string>
+  <string name="pref_plugin_bigscreen">Bigscreen 遠端</string>
+  <string name="pref_plugin_bigscreen_desc">將您的裝置用作 Plasma Bigscreen 的遠端</string>
 </resources>

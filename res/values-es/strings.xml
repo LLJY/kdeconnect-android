@@ -3,6 +3,7 @@
   <string name="kde_connect">KDE Connect</string>
   <string name="foreground_notification_no_devices">No conectado a ningún dispositivo</string>
   <string name="foreground_notification_devices">Conectado a: %s</string>
+  <string name="foreground_notification_send_clipboard">Enviar al portapapeles</string>
   <string name="pref_plugin_telephony">Notificador de telefonía</string>
   <string name="pref_plugin_telephony_desc">Enviar notificaciones por llamadas entrantes</string>
   <string name="pref_plugin_battery">Informe de la batería</string>
@@ -11,6 +12,7 @@
   <string name="pref_plugin_sftp_desc">Permite examinar de forma remota el sistema de archivos de este dispositivo</string>
   <string name="pref_plugin_clipboard">Sincronización del portapapeles</string>
   <string name="pref_plugin_clipboard_desc">Compartir el contenido del portapapeles</string>
+  <string name="pref_plugin_clipboard_sent">Enviado al portapapeles</string>
   <string name="pref_plugin_mousepad">Entrada remota</string>
   <string name="pref_plugin_mousepad_desc">Usar su teléfono o tableta como teclado y teclado táctil</string>
   <string name="pref_plugin_presenter">Presentación de diapositivas remota</string>
@@ -123,6 +125,7 @@
     <item quantity="one">Fallo al enviar el archivo a %1$s</item>
     <item quantity="other">Fallo al enviar %2$d de %3$d archivos a %1$s</item>
   </plurals>
+  <string name="tap_to_open">Pulse para abrir</string>
   <string name="received_file_text">Pulse para abrir «%1s»</string>
   <string name="cannot_create_file">No se pudo crear el archivo %s</string>
   <string name="tap_to_answer">Pulse para responder</string>
@@ -287,4 +290,14 @@
   <string name="location_permission_needed_title">Permisos requeridos</string>
   <string name="location_permission_needed_desc">Android necesita el permiso de localización para identificar su red WiFi</string>
   <string name="clipboard_android_x_incompat">Android 10 ha eliminado el acceso al portapapeles para todas las aplicaciones. Este complemento se desactivará.</string>
+  <string name="mpris_open_url">Continuar reproduciendo aquí</string>
+  <string name="cant_open_url">No se pudo abrir la URL para continuar reproduciendo</string>
+  <string name="bigscreen_home">Inicio</string>
+  <string name="bigscreen_up">Arriba</string>
+  <string name="bigscreen_left">Izquierda</string>
+  <string name="bigscreen_select">Seleccionar</string>
+  <string name="bigscreen_right">Derecha</string>
+  <string name="bigscreen_down">Abajo</string>
+  <string name="pref_plugin_bigscreen">Bigscreen remoto</string>
+  <string name="pref_plugin_bigscreen_desc">Use su dispositivo como mando remoto para Plasma Bigscreen</string>
 </resources>
