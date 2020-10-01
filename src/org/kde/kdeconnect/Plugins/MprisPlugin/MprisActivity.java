@@ -1,26 +1,11 @@
 /*
- * Copyright 2014 Albert Vaca Cintora <albertvaka@gmail.com>
+ * SPDX-FileCopyrightText: 2014 Albert Vaca Cintora <albertvaka@gmail.com>
  *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License or (at your option) version 3 or any later version
- * accepted by the membership of KDE e.V. (or its successor approved
- * by the membership of KDE e.V.), which shall act as a proxy
- * defined in Section 14 of version 3 of the license.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
 package org.kde.kdeconnect.Plugins.MprisPlugin;
 
-import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -31,9 +16,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -46,6 +31,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.fragment.app.FragmentManager;
+
+import org.apache.commons.lang3.ArrayUtils;
 import org.kde.kdeconnect.Backends.BaseLink;
 import org.kde.kdeconnect.Backends.BaseLinkProvider;
 import org.kde.kdeconnect.BackgroundService;
@@ -58,10 +50,6 @@ import org.kde.kdeconnect_tp.R;
 import java.net.MalformedURLException;
 import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.drawable.DrawableCompat;
-import androidx.fragment.app.FragmentManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -159,7 +147,7 @@ public class MprisActivity extends AppCompatActivity {
                     final List<String> playerList = mpris.getPlayerList();
                     final ArrayAdapter<String> adapter = new ArrayAdapter<>(MprisActivity.this,
                             android.R.layout.simple_spinner_item,
-                            playerList.toArray(new String[0])
+                            playerList.toArray(ArrayUtils.EMPTY_STRING_ARRAY)
                     );
 
                     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -267,8 +255,10 @@ public class MprisActivity extends AppCompatActivity {
 
         Bitmap albumArt = playerStatus.getAlbumArt();
         if (albumArt == null) {
-            Drawable placeholder_art = DrawableCompat.wrap(getResources().getDrawable(R.drawable.ic_album_art_placeholder));
-            DrawableCompat.setTint(placeholder_art, getResources().getColor(R.color.primary));
+            final Drawable drawable = ContextCompat.getDrawable(this, R.drawable.ic_album_art_placeholder);
+            assert drawable != null;
+            Drawable placeholder_art = DrawableCompat.wrap(drawable);
+            DrawableCompat.setTint(placeholder_art, ContextCompat.getColor(this, R.color.primary));
             albumArtView.setImageDrawable(placeholder_art);
         } else {
             albumArtView.setImageBitmap(albumArt);
@@ -382,7 +372,7 @@ public class MprisActivity extends AppCompatActivity {
         String targetPlayerName = getIntent().getStringExtra("player");
         getIntent().removeExtra("player");
 
-        if (targetPlayerName == null || targetPlayerName.isEmpty()) {
+        if (TextUtils.isEmpty(targetPlayerName)) {
             if (savedInstanceState != null) {
                 targetPlayerName = savedInstanceState.getString("targetPlayer");
             }

@@ -1,21 +1,7 @@
 /*
- * Copyright 2014 Albert Vaca Cintora <albertvaka@gmail.com>
+ * SPDX-FileCopyrightText: 2014 Albert Vaca Cintora <albertvaka@gmail.com>
  *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License or (at your option) version 3 or any later version
- * accepted by the membership of KDE e.V. (or its successor approved
- * by the membership of KDE e.V.), which shall act as a proxy
- * defined in Section 14 of version 3 of the license.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
 package org.kde.kdeconnect.Backends.LanBackend;
@@ -32,7 +18,6 @@ import org.kde.kdeconnect.BackgroundService;
 import org.kde.kdeconnect.Device;
 import org.kde.kdeconnect.Helpers.DeviceHelper;
 import org.kde.kdeconnect.Helpers.SecurityHelpers.SslHelper;
-import org.kde.kdeconnect.Helpers.StringsHelper;
 import org.kde.kdeconnect.Helpers.TrustedNetworkHelper;
 import org.kde.kdeconnect.NetworkPacket;
 import org.kde.kdeconnect.UserInterface.CustomDevicesActivity;
@@ -56,6 +41,8 @@ import java.util.TimerTask;
 
 import javax.net.SocketFactory;
 import javax.net.ssl.SSLSocket;
+
+import kotlin.text.Charsets;
 
 /**
  * This BaseLinkProvider creates {@link LanLink}s to other devices on the same
@@ -122,7 +109,7 @@ public class LanLinkProvider extends BaseLinkProvider implements LanLink.LinkDis
 
         try {
 
-            String message = new String(packet.getData(), StringsHelper.UTF8);
+            String message = new String(packet.getData(), Charsets.UTF_8);
             final NetworkPacket identityPacket = NetworkPacket.unserialize(message);
             final String deviceId = identityPacket.getString("deviceId");
             if (!identityPacket.getType().equals(NetworkPacket.PACKET_TYPE_IDENTITY)) {
@@ -388,7 +375,7 @@ public class LanLinkProvider extends BaseLinkProvider implements LanLink.LinkDis
                 socket = new DatagramSocket();
                 socket.setReuseAddress(true);
                 socket.setBroadcast(true);
-                bytes = identity.serialize().getBytes(StringsHelper.UTF8);
+                bytes = identity.serialize().getBytes(Charsets.UTF_8);
             } catch (Exception e) {
                 Log.e("KDE/LanLinkProvider", "Failed to create DatagramSocket", e);
             }

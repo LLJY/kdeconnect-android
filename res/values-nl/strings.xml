@@ -213,6 +213,8 @@
   <string name="no_file_browser">Er zijn geen bestandsbrowsers geïnstalleerd.</string>
   <string name="pref_plugin_telepathy">SMS verzenden</string>
   <string name="pref_plugin_telepathy_desc">Stuur tekstberichten van uw bureaublad</string>
+  <string name="pref_plugin_telepathy_mms">MMS verzenden</string>
+  <string name="pref_plugin_telepathy_mms_desc">Om MMS te kunnen verzenden vanuit KDE Connect moet u het als de standaard SMS-app instellen.</string>
   <string name="findmyphone_title">Zoek mijn telefoon</string>
   <string name="findmyphone_title_tablet">Zoek mijn tablet</string>
   <string name="findmyphone_title_tv">Zoek mijn tv</string>
@@ -249,6 +251,7 @@
   <string name="notification_channel_media_control">Besturing van media</string>
   <string name="notification_channel_filetransfer">Bestandsoverdracht</string>
   <string name="notification_channel_high_priority">Hoge prioriteit</string>
+  <string name="notification_channel_sms_mms">Nieuw bericht</string>
   <string name="mpris_stop">Stop de huidige speler</string>
   <string name="copy_url_to_clipboard">URL-adres kopiëren naar klembord</string>
   <string name="clipboard_toast">Gekopieerd naar klembord</string>
@@ -298,6 +301,34 @@
   <string name="bigscreen_select">Selecteren</string>
   <string name="bigscreen_right">Rechts</string>
   <string name="bigscreen_down">Omlaag</string>
+  <string name="bigscreen_mic">Mic</string>
   <string name="pref_plugin_bigscreen">Bigscreen op afstand</string>
   <string name="pref_plugin_bigscreen_desc">Gebruik uw apparaat als een Bigscreen op afstand</string>
+  <string name="bigscreen_optional_permission_explanation">Om microfooninvoer vanaf uw telefoon te delen moet u toegang geven tot de geluidsinvoer van de telefoon</string>
+  <string name="bigscreen_speech_extra_prompt">Spraak</string>
+  <string name="message_reply_label">BEANTWOORDEN</string>
+  <string name="mark_as_read_label">MARKEREN ALS GELEZEN</string>
+  <string name="user_display_name">U</string>
+  <string name="set_default_sms_app_title">MMS verzenden</string>
+  <string name="set_group_message_as_mms_title">MMS verzenden naar groep</string>
+  <string name="set_long_text_as_mms_title">Lange tekst als MMS verzenden</string>
+  <string name="convert_to_mms_after_title">Naar MMS converteren</string>
+  <string-array name="convert_to_mms_after_entries">
+    <item>Na één bericht</item>
+    <item>Na twee berichten</item>
+    <item>Na drie berichten</item>
+    <item>Na vier berichten</item>
+    <item>Na vijf berichten</item>
+  </string-array>
+  <string name="theme_dialog_title">Thema kiezen</string>
+  <string-array name="theme_list">
+    <item>Op batterijbesparing instellen</item>
+    <item>Licht</item>
+    <item>Donker</item>
+  </string-array>
+  <string-array name="theme_list_v28">
+    <item>Systeemstandaard</item>
+    <item>Licht</item>
+    <item>Donker</item>
+  </string-array>
 </resources>

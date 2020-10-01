@@ -229,6 +229,8 @@
   <string name="no_file_browser">Програм для навігації файловою системою не встановлено.</string>
   <string name="pref_plugin_telepathy">Надіслати SMS</string>
   <string name="pref_plugin_telepathy_desc">Надсилати текстові повідомлення з вашої робочої станції</string>
+  <string name="pref_plugin_telepathy_mms">Надіслати MMS</string>
+  <string name="pref_plugin_telepathy_mms_desc">Щоб мати змогу надсилати MMS з KDE Connect, вам слід встановити цю програму як типову програму для роботи з SMS.</string>
   <string name="findmyphone_title">Знайти телефон</string>
   <string name="findmyphone_title_tablet">Знайти планшет</string>
   <string name="findmyphone_title_tv">Знайти мій телевізор</string>
@@ -265,6 +267,7 @@
   <string name="notification_channel_media_control">Керування відтворенням</string>
   <string name="notification_channel_filetransfer">Передавання файлів</string>
   <string name="notification_channel_high_priority">Високий пріоритет</string>
+  <string name="notification_channel_sms_mms">Нове повідомлення</string>
   <string name="mpris_stop">Зупинити відтворення у поточному програвачі</string>
   <string name="copy_url_to_clipboard">Скопіювати адресу до буфера</string>
   <string name="clipboard_toast">Скопійовано до буфера</string>
@@ -314,6 +317,34 @@
   <string name="bigscreen_select">Вибрати</string>
   <string name="bigscreen_right">Праворуч</string>
   <string name="bigscreen_down">Вниз</string>
+  <string name="bigscreen_mic">Мікрофон</string>
   <string name="pref_plugin_bigscreen">Керування великим екраном</string>
   <string name="pref_plugin_bigscreen_desc">Скористайтеся вашим пристроєм як дистанційним керуванням для великого екрана Плазми</string>
+  <string name="bigscreen_optional_permission_explanation">Щоб оприлюднити вхідні дані з мікрофона вашого телефону, вам слід надати програми доступ до вхідного звукового каналу телефону</string>
+  <string name="bigscreen_speech_extra_prompt">Озвучення</string>
+  <string name="message_reply_label">ВІДПОВІСТИ</string>
+  <string name="mark_as_read_label">ПОЗНАЧИТИ ЯК ПРОЧИТАНЕ</string>
+  <string name="user_display_name">Ви</string>
+  <string name="set_default_sms_app_title">Надіслати MMS</string>
+  <string name="set_group_message_as_mms_title">Надіслати групове MMS</string>
+  <string name="set_long_text_as_mms_title">Надіслати довгий текст як MMS</string>
+  <string name="convert_to_mms_after_title">Перетворити на MMS</string>
+  <string-array name="convert_to_mms_after_entries">
+    <item>Після одного повідомлення</item>
+    <item>Після двох повідомлень</item>
+    <item>Після трьох повідомлень</item>
+    <item>Після чотирьох повідомлень</item>
+    <item>Після п\'яти повідомлень</item>
+  </string-array>
+  <string name="theme_dialog_title">Вибір теми</string>
+  <string-array name="theme_list">
+    <item>Встановлена зберігачем акумулятора</item>
+    <item>Світла</item>
+    <item>Темна</item>
+  </string-array>
+  <string-array name="theme_list_v28">
+    <item>Типова для системи</item>
+    <item>Світла</item>
+    <item>Темна</item>
+  </string-array>
 </resources>

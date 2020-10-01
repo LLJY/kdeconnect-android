@@ -213,6 +213,8 @@
   <string name="no_file_browser">Não existem gestores de ficheiros instalados.</string>
   <string name="pref_plugin_telepathy">Enviar um SMS</string>
   <string name="pref_plugin_telepathy_desc">Enviar mensagens de texto a partir do seu ambiente de trabalho</string>
+  <string name="pref_plugin_telepathy_mms">Enviar um MMS</string>
+  <string name="pref_plugin_telepathy_mms_desc">Para poder enviar MMS\'s a partir do KDE Connect, é necessário configurá-lo como a aplicação de SMS\'s predefinida.</string>
   <string name="findmyphone_title">Descobrir o meu telefone</string>
   <string name="findmyphone_title_tablet">Descobrir o meu \'tablet\'</string>
   <string name="findmyphone_title_tv">Descobrir a minha TV</string>
@@ -249,6 +251,7 @@
   <string name="notification_channel_media_control">Comando multimédia</string>
   <string name="notification_channel_filetransfer">Transferência de ficheiros</string>
   <string name="notification_channel_high_priority">Alta prioridade</string>
+  <string name="notification_channel_sms_mms">Nova Mensagem</string>
   <string name="mpris_stop">Parar o leitor actual</string>
   <string name="copy_url_to_clipboard">Copiar o URL para a área de transferência</string>
   <string name="clipboard_toast">Copiado para a área de transferência</string>
@@ -298,6 +301,34 @@
   <string name="bigscreen_select">Seleccionar</string>
   <string name="bigscreen_right">Direita</string>
   <string name="bigscreen_down">Baixo</string>
+  <string name="bigscreen_mic">Mic</string>
   <string name="pref_plugin_bigscreen">Comando à distância do ecrã grande</string>
   <string name="pref_plugin_bigscreen_desc">Use o seu dispositivo como um comando à distância para o Plasma em Ecrã Grande</string>
+  <string name="bigscreen_optional_permission_explanation">Para partilhar os dados provenientes do microfone do seu telefone, terá de dar acesso à entrada de áudio do telefone</string>
+  <string name="bigscreen_speech_extra_prompt">Fala</string>
+  <string name="message_reply_label">RESPONDER</string>
+  <string name="mark_as_read_label">MARCAR COMO LIDA</string>
+  <string name="user_display_name">Você</string>
+  <string name="set_default_sms_app_title">Enviar um MMS</string>
+  <string name="set_group_message_as_mms_title">Enviar um MMS em grupo</string>
+  <string name="set_long_text_as_mms_title">Enviar o texto extenso como MMS</string>
+  <string name="convert_to_mms_after_title">Converter para MMS</string>
+  <string-array name="convert_to_mms_after_entries">
+    <item>Ao fim de uma mensagem</item>
+    <item>Ao fim de duas mensagens</item>
+    <item>Ao fim de três mensagens</item>
+    <item>Ao fim de quatro mensagens</item>
+    <item>Ao fim de cinco mensagens</item>
+  </string-array>
+  <string name="theme_dialog_title">Escolha o tema</string>
+  <string-array name="theme_list">
+    <item>Definido pela Poupança da Bateria</item>
+    <item>Claro</item>
+    <item>Escuro</item>
+  </string-array>
+  <string-array name="theme_list_v28">
+    <item>Predefinição do Sistema</item>
+    <item>Claro</item>
+    <item>Escuro</item>
+  </string-array>
 </resources>

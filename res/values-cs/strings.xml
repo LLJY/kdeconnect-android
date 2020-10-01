@@ -229,6 +229,8 @@
   <string name="no_file_browser">Není nainstalován žádný prohlížeč souborů.</string>
   <string name="pref_plugin_telepathy">Poslat SMS</string>
   <string name="pref_plugin_telepathy_desc">Posílejte zprávy ze své pracovní plochy</string>
+  <string name="pref_plugin_telepathy_mms">Poslat MMS</string>
+  <string name="pref_plugin_telepathy_mms_desc">Abyste mohli posílat MMS pomocí KDE Connect jej musíte nastavit jako výchozí aplikaci na SMS.</string>
   <string name="findmyphone_title">Najít můj telefon</string>
   <string name="findmyphone_title_tablet">Najít můj tablet</string>
   <string name="findmyphone_title_tv">Najít mou TV</string>
@@ -265,6 +267,7 @@
   <string name="notification_channel_media_control">Ovládání médií</string>
   <string name="notification_channel_filetransfer">Přenos souboru</string>
   <string name="notification_channel_high_priority">Vysoká priorita</string>
+  <string name="notification_channel_sms_mms">Nová zpráva</string>
   <string name="mpris_stop">Zastavit současný přehrávač</string>
   <string name="copy_url_to_clipboard">Kopírovat URL do schránky</string>
   <string name="clipboard_toast">Zkopírováno do schránky</string>
@@ -314,6 +317,34 @@
   <string name="bigscreen_select">Vybrat</string>
   <string name="bigscreen_right">Vpravo</string>
   <string name="bigscreen_down">Dolů</string>
+  <string name="bigscreen_mic">Mikrofon</string>
   <string name="pref_plugin_bigscreen">Dálkový ovladač pro Bigscreen</string>
   <string name="pref_plugin_bigscreen_desc">Používejte své zařízení jako ovladač pro Plasma Bigscreen</string>
+  <string name="bigscreen_optional_permission_explanation">Pro sdílení vstupu mikrofonu z vašeho telefonu je potřeba udělit přístup ke vstupnímu audio zařízení telefonu</string>
+  <string name="bigscreen_speech_extra_prompt">Mluvené slovo</string>
+  <string name="message_reply_label">ODPOVĚĎ</string>
+  <string name="mark_as_read_label">OZNAČIT JAKO PŘEČTENÉ</string>
+  <string name="user_display_name">Vy</string>
+  <string name="set_default_sms_app_title">Poslat MMS</string>
+  <string name="set_group_message_as_mms_title">Poslat skupinovou MMS</string>
+  <string name="set_long_text_as_mms_title">Poslat dlouhý text jako MMS</string>
+  <string name="convert_to_mms_after_title">Převést na MMS</string>
+  <string-array name="convert_to_mms_after_entries">
+    <item>Po jedné zprávě</item>
+    <item>Po dvou zprávách</item>
+    <item>Po třech zprávách</item>
+    <item>Po čtyřech zprávách</item>
+    <item>Po pěti zprávách</item>
+  </string-array>
+  <string name="theme_dialog_title">Vyberte motiv</string>
+  <string-array name="theme_list">
+    <item>Nastaveno spořičem baterie</item>
+    <item>Lehké</item>
+    <item>Tmavé</item>
+  </string-array>
+  <string-array name="theme_list_v28">
+    <item>Výchozí systémový</item>
+    <item>Světlý</item>
+    <item>Tmavý</item>
+  </string-array>
 </resources>
